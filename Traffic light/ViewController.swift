@@ -16,14 +16,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //redLampView.isHidden = true
-        redLampView.layer.cornerRadius = 64
-        yellowLampView.layer.cornerRadius = 64
-        greenLanpView.layer.cornerRadius = 64
-        colorSwitchingButton.layer.cornerRadius = 10
+        redLampView.layer.cornerRadius = 71
+        yellowLampView.layer.cornerRadius = 71
+        greenLanpView.layer.cornerRadius = 71
+        colorSwitchingButton.layer.cornerRadius = 15
+        colorSwitchingButton.configuration
         
     }
 
-
+    @IBAction func colorSwitchingButtonTapped() {
+    }
+    
 }
 
