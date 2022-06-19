@@ -17,16 +17,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //redLampView.isHidden = true
         redLampView.layer.cornerRadius = 71
         yellowLampView.layer.cornerRadius = 71
         greenLanpView.layer.cornerRadius = 71
         colorSwitchingButton.layer.cornerRadius = 15
-        //colorSwitchingButton.configuration
         
     }
     var numberOfClicks = 0
+    
     @IBAction func colorSwitchingButtonTapped() {
+        colorSwitchingButton.setTitle("NEXT", for: .normal)
+        
         numberOfClicks += 1
         if numberOfClicks % 2 == 0 {
             yellowLampView.alpha = 1
