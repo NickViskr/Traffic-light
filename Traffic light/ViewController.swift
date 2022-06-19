@@ -22,11 +22,29 @@ class ViewController: UIViewController {
         yellowLampView.layer.cornerRadius = 71
         greenLanpView.layer.cornerRadius = 71
         colorSwitchingButton.layer.cornerRadius = 15
-        colorSwitchingButton.configuration
+        //colorSwitchingButton.configuration
         
     }
-
+    var numberOfClicks = 0
     @IBAction func colorSwitchingButtonTapped() {
+        numberOfClicks += 1
+        if numberOfClicks % 2 == 0 {
+            yellowLampView.alpha = 1
+            greenLanpView.alpha = 0.2
+            redLampView.alpha = 0.2
+        } else if numberOfClicks % 3 == 0 {
+            greenLanpView.alpha = 1
+            yellowLampView.alpha = 0.2
+            redLampView.alpha = 0.2
+            numberOfClicks = 0
+        } else {
+            redLampView.alpha = 1
+            greenLanpView.alpha = 0.2
+            yellowLampView.alpha = 0.2
+            
+        }
+        
+        
     }
     
 }
