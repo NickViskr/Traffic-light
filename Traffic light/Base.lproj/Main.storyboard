@@ -58,6 +58,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g3j-R9-TVp" secondAttribute="bottom" constant="127" id="qrp-ka-mIp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorSwitchingButton" destination="g3j-R9-TVp" id="T6B-hj-cmx"/>
+                        <outlet property="greenLanpView" destination="UDQ-7z-YzV" id="xdt-lg-NyN"/>
+                        <outlet property="redLampView" destination="cFN-M9-ojg" id="gEi-Ku-Chi"/>
+                        <outlet property="yellowLampView" destination="v8t-l0-wKz" id="Kz1-FT-z8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
