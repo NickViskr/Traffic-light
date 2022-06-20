@@ -14,34 +14,38 @@ class ViewController: UIViewController {
     @IBOutlet var greenLanpView: UIView!
     @IBOutlet var colorSwitchingButton: UIButton!
     
+    private var numberOfClicks = 0
+    private let lightIsOn: CGFloat = 1
+    private let lightIsOff: CGFloat = 0.2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redLampView.layer.cornerRadius = 71
-        yellowLampView.layer.cornerRadius = 71
-        greenLanpView.layer.cornerRadius = 71
+        redLampView.layer.cornerRadius = redLampView.frame.height / 2
+        yellowLampView.layer.cornerRadius = yellowLampView.frame.height / 2
+        greenLanpView.layer.cornerRadius = greenLanpView.frame.height / 2
         colorSwitchingButton.layer.cornerRadius = 15
         
     }
-    var numberOfClicks = 0
+    
     
     @IBAction func colorSwitchingButtonTapped() {
         colorSwitchingButton.setTitle("NEXT", for: .normal)
         
         numberOfClicks += 1
         if numberOfClicks % 2 == 0 {
-            yellowLampView.alpha = 1
-            greenLanpView.alpha = 0.2
-            redLampView.alpha = 0.2
+            yellowLampView.alpha = lightIsOn
+            greenLanpView.alpha = lightIsOff
+            redLampView.alpha = lightIsOff
         } else if numberOfClicks % 3 == 0 {
-            greenLanpView.alpha = 1
-            yellowLampView.alpha = 0.2
-            redLampView.alpha = 0.2
+            greenLanpView.alpha = lightIsOn
+            yellowLampView.alpha = lightIsOff
+            redLampView.alpha = lightIsOff
             numberOfClicks = 0
         } else {
-            redLampView.alpha = 1
-            greenLanpView.alpha = 0.2
-            yellowLampView.alpha = 0.2
+            redLampView.alpha = lightIsOn
+            greenLanpView.alpha = lightIsOff
+            yellowLampView.alpha = lightIsOff
             
         }
         
