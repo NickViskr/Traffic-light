@@ -24,10 +24,11 @@ class ViewController: UIViewController {
         
     }
     override func viewWillLayoutSubviews() {
-        redLampView.layer.cornerRadius = redLampView.frame.height / 2
-        yellowLampView.layer.cornerRadius = yellowLampView.frame.height / 2
-        greenLanpView.layer.cornerRadius = greenLanpView.frame.height / 2
+        redLampView.layer.cornerRadius = redLampView.frame.width / 2
+        yellowLampView.layer.cornerRadius = yellowLampView.frame.width / 2
+        greenLanpView.layer.cornerRadius = greenLanpView.frame.width / 2
     }
+    
     
     
     @IBAction func colorSwitchingButtonTapped() {
