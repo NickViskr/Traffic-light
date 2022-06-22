@@ -34,24 +34,21 @@
                                 <rect key="frame" x="136" y="105" width="142" height="142"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="142" id="IX1-0n-zWh"/>
-                                    <constraint firstAttribute="width" constant="142" id="Vyf-zq-wtU"/>
+                                    <constraint firstAttribute="width" secondItem="zjC-9J-zLq" secondAttribute="height" multiplier="1:1" id="EuO-bz-Mi9"/>
                                 </constraints>
                             </view>
                             <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-Jd-Hu8">
                                 <rect key="frame" x="136" y="285" width="142" height="142"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="OxZ-ny-eVT"/>
-                                    <constraint firstAttribute="height" constant="142" id="p70-vd-Y9T"/>
+                                    <constraint firstAttribute="width" secondItem="Td8-Jd-Hu8" secondAttribute="height" multiplier="1:1" id="6vd-yq-ZIj"/>
                                 </constraints>
                             </view>
                             <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-wV-g8Q">
                                 <rect key="frame" x="136" y="466" width="142" height="142"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="FFp-4s-oei"/>
-                                    <constraint firstAttribute="height" constant="142" id="UuA-ee-WZc"/>
+                                    <constraint firstAttribute="width" secondItem="PSs-wV-g8Q" secondAttribute="height" multiplier="1:1" id="34c-Jp-N6E"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -61,8 +58,11 @@
                             <constraint firstItem="zjC-9J-zLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BB5-ng-i0A"/>
                             <constraint firstItem="Td8-Jd-Hu8" firstAttribute="top" secondItem="zjC-9J-zLq" secondAttribute="bottom" constant="38" id="EeU-Sx-hE3"/>
                             <constraint firstItem="Td8-Jd-Hu8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jb2-MI-Rlj"/>
+                            <constraint firstItem="Td8-Jd-Hu8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.158482" id="RoM-qW-kNk"/>
                             <constraint firstItem="g3j-R9-TVp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alt-Hr-Rbr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g3j-R9-TVp" secondAttribute="bottom" constant="44" id="gVx-fi-aGR"/>
+                            <constraint firstItem="zjC-9J-zLq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.158482" id="hZO-df-3jX"/>
+                            <constraint firstItem="PSs-wV-g8Q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.158482" id="jCB-jW-gx9"/>
                             <constraint firstItem="zjC-9J-zLq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="jgF-53-E7b"/>
                             <constraint firstItem="PSs-wV-g8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ug7-CZ-ebH"/>
                             <constraint firstItem="PSs-wV-g8Q" firstAttribute="top" secondItem="Td8-Jd-Hu8" secondAttribute="bottom" constant="39" id="ztz-BM-eix"/>

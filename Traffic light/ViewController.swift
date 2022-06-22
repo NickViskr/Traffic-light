@@ -20,12 +20,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colorSwitchingButton.layer.cornerRadius = 15
         
+    }
+    override func viewWillLayoutSubviews() {
         redLampView.layer.cornerRadius = redLampView.frame.height / 2
         yellowLampView.layer.cornerRadius = yellowLampView.frame.height / 2
         greenLanpView.layer.cornerRadius = greenLanpView.frame.height / 2
-        colorSwitchingButton.layer.cornerRadius = 15
-        
     }
     
     
