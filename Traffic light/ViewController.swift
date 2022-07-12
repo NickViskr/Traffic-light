@@ -29,8 +29,6 @@ class ViewController: UIViewController {
         greenLanpView.layer.cornerRadius = greenLanpView.frame.width / 2
     }
     
-    
-    
     @IBAction func colorSwitchingButtonTapped() {
         colorSwitchingButton.setTitle("NEXT", for: .normal)
         
@@ -48,11 +46,7 @@ class ViewController: UIViewController {
             redLampView.alpha = lightIsOn
             greenLanpView.alpha = lightIsOff
             yellowLampView.alpha = lightIsOff
-            
         }
-        
-        
     }
-    
 }
 
